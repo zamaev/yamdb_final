@@ -1,4 +1,4 @@
-![main workflow](https://github.com/zamaev/yamdb_final/actions/workflows/main.yml/badge.svg)
+![main workflow](https://github.com/zamaev/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 # api_yamdb
 API к платформе для оставления отзывов к произведениям, составления рейтингов и комментирования отзывов
