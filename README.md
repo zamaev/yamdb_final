@@ -18,19 +18,19 @@ DB_PORT=5432 # порт для подключения к БД
 Запуск приложения в контейнерах:
 ```bash
 cd infra
-docker-compose up -d
+sudo docker-compose up -d
 ```
 Применение миграций:
 ```bash
-docker-compose exec web python manage.py migrate
+sudo docker-compose exec web python manage.py migrate
 ```
 Сбор статических файлов
 ```bash
-docker-compose exec web python manage.py collectstatic
+sudo docker-compose exec web python manage.py collectstatic
 ```
 Заполнение БД демо-данными:
 ```bash
-docker-compose exec web python manage.py loaddata fixtures.json
+sudo docker-compose exec web python manage.py loaddata fixtures.json
 ```
 Авторизация в админке с демо данными
 ```
