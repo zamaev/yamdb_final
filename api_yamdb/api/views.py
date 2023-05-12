@@ -10,8 +10,8 @@ from rest_framework_simplejwt.tokens import AccessToken
 
 from api.filters import TitleFilter
 from api.mixins import CreateListDestroyViewSet
-from api.permissions import (IsAdminOrReadOnly, IsAdmin,
-                             IsOwnerModeratorAdminOrReadOnly, IsOwner)
+from api.permissions import (IsAdmin, IsAdminOrReadOnly, IsOwner,
+                             IsOwnerModeratorAdminOrReadOnly)
 from api.serializers import (AuthSerializer, CategorySerializer,
                              CommentSerializer, GenreSerializer,
                              ReviewSerializer, TitleSerializer,
