@@ -12,6 +12,9 @@ POSTGRES_USER=postgres # логин для подключения к БД
 POSTGRES_PASSWORD=postgres # пароль для подключения к БД
 DB_HOST=db # название сервиса (контейнера)
 DB_PORT=5432 # порт для подключения к БД
+SECRET_KEY=secret # секретный ключ Django
+DEBUG=False # режим отладки
+ALLOWED_HOSTS=localhost,127.0.0.1 # разрешенные хосты через запятую
 ```
 
 ## Запуск проекта
@@ -37,6 +40,10 @@ sudo docker-compose exec web python manage.py loaddata fixtures.json
 http://localhost/admin/
 admin:admin
 ```
+
+## Демо доступ
+Посмотреть пример работы можно по ссылке
+http://158.160.55.118/
 
 ## Примеры запросов
 ### Регистрация 
