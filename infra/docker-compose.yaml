@@ -11,7 +11,7 @@ services:
     image: aydrus/api_yamdb:latest
     restart: always
     volumes:
-      - static_value:/app/static/
+      - static_value:/app/staticfiles/
       - media_value:/app/media/
     depends_on:
       - db
@@ -23,7 +23,7 @@ services:
       - "80:80"
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
-      - static_value:/var/html/static/
+      - static_value:/var/html/staticfiles/
       - media_value:/var/html/media/
     depends_on:
       - web
