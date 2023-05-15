@@ -71,7 +71,6 @@ jobs:
             echo DEBUG=${{ secrets.DEBUG }} >> .env
             echo ALLOWED_HOSTS=${{ secrets.ALLOWED_HOSTS }} >> .env
             sudo docker-compose up -d
-            sudo docker-compose exec web python manage.py collectstatic --no-input --clear
 
   send_message:
     runs-on: ubuntu-latest
